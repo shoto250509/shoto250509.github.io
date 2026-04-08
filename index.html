@@ -4,7 +4,7 @@
         <title> Tran Vu | Personal Profile</title> 
         <meta charset="utf-8"> 
         <meta name="Home description" content="Home"> 
-        <meta name="Keywords" content="Huong dan co ban"> 
+        <meta name="Keywords" content="Tran Vu Profile"> 
         <meta name="Authur" content="Huy Vu">
         <meta name="Viewport" content="width=device-width,initial-scale=1.0"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -35,12 +35,10 @@
             {
                 position: absolute;
                 inset: 0; 
-                
                 background-image: url("back.jpg");
                 background-size: cover;       
                 background-position: center; 
                 background-repeat: no-repeat;
-
                 filter: blur(8px) brightness(60%);
                 transform: scale(1.1);
             }
@@ -81,17 +79,11 @@
                 max-width: 500px;
                 margin: 50px auto;
                 padding: 20px;
-
                 border-radius: 15px;
-
                 background: rgba(255, 255, 255, 0.1);
-
                 backdrop-filter: blur(10px);
-
                 border: 1px solid rgba(255,255,255,0.3);
-
                 box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-
                 color: white;
                 text-align: left;
             }
@@ -165,7 +157,7 @@
             }
             .contact-list 
             {
-                 display: flex;
+                display: flex;
                 justify-content: center; 
                 gap: 35px;
             }
@@ -173,18 +165,14 @@
             {
                 width: 10%;
                 max-width: 300px;
-
                 display: flex;
                 align-items: center;
                 justify-content: center; 
-
                 padding: 10px 20px;
                 border-radius: 100px;
-
                 color: white;
                 text-decoration: none;
                 font-size: 20px;
-
                 transition: 0.3s;
             }
             .fb 
@@ -210,7 +198,6 @@
                 bottom: -102px;
                 left: 50%;
                 transform: translateX(-50%);
-
                 color: white;
                 font-size: 20px;
                 font-weight: 600;
@@ -222,7 +209,6 @@
                 bottom: -115px;
                 left: 50%;
                 transform: translateX(-50%);
-
                 font-size: 10x;
                 opacity: 0.7;
             }
@@ -230,7 +216,6 @@
             {
                 padding: 40px 20px 10px; 
             }
-            /* text  */
             @keyframes fadeInUp 
             {
                 from 
@@ -278,10 +263,7 @@
             .img-2
             {
                 animation: SlideIn-2 2.5s ease-in-out forwards;
-                /* animation-delay: 2s; */
-
             }
-            /* typing  */
             @keyframes typing 
             {
                 0% 
@@ -309,45 +291,47 @@
                 width: 0;
                 animation: typing 4s steps(7) infinite, blink 1s infinite;
             }
-            /* pop  */
             .pop 
             {
                 animation: pop 2s infinite;
             }
             @keyframes pop 
             {
-                0% {
+                0% 
+                {
                     transform: scale(.6);
                     opacity: 0;
                 }
-                50% {
+                50% 
+                {
                     transform: scale(1.1);
                     opacity: 1;
                 }
-                100% {
+                100% 
+                {
                     transform: scale(.6);
                     opacity: 0;
                 }
             }
-            /* wave  */
             .wave span 
             {
                 display: inline-block;
                 animation: wave 1.2s infinite;
             }
-            .wave span:nth-child(2) {
+            .wave span:nth-child(2) 
+            {
                 animation-delay: .1s
             }
-            
-            .wave span:nth-child(3) {
+            .wave span:nth-child(3) 
+            {
                 animation-delay: .2s
             }
-            
-            .wave span:nth-child(4) {
+            .wave span:nth-child(4) 
+            {
                 animation-delay: .3s
             }
-            
-            .wave span:nth-child(5) {
+            .wave span:nth-child(5) 
+            {
                 animation-delay: .4s
             }
             @keyframes wave 
@@ -364,22 +348,18 @@
             }
         </style>
     </head>
-
     <body>
         <div class="container">
             <div class="background"> </div>
             <div class="content"> 
                 <div class="about-box">
                     <div class="profile-header">
-                        <div class="cover">
-                            
-                        </div>
+                        <div class="cover"></div>
                             <img src="avatar.jpg" class="avatar">
                             <h3 class="username">Tran Vu</h3>
                             <p class="subname">@shototran.09</p>
                     </div>
                     <div class="about-content">
-                        <!-- ABOUT ME -->
                         <div class="section">
                             <h2>ABOUT ME</h2>
                             <p>
@@ -392,19 +372,15 @@
                                 I love my family so much.
                             </p>
                         </div>
-
-                        <!-- CONTACT -->
                         <div class="section">
                             <h2>CONTACT</h2>
                             <div class="contact-list">
                                 <a href="https://www.facebook.com/traanfvux.09" target="_blank" class="contact-btn fb">
                                     <i class="fab fa-facebook-f wave"></i>
                                 </a>
-
                                 <a href="https://www.instagram.com/traanfvux.09" target="_blank" class="contact-btn ig">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                
                                 <a href="https://www.tiktok.com/@traanfvux" target="_blank" class="contact-btn tt">
                                     <i class="fab fa-tiktok"></i>
                                 </a>
@@ -412,8 +388,18 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
+        <script>
+            document.addEventListener("contextmenu", function(e) 
+            {
+                e.preventDefault();
+            });
+            document.onkeydown = function(e) 
+            {
+                if (e.keyCode == 123) return false; 
+                if (e.ctrlKey && e.keyCode == 85) return false; 
+            };
+        </script>
     </body>
 </html>
